@@ -1,5 +1,6 @@
 package com.example.ilmpole.view
 
+import android.app.Activity
 import android.os.Bundle
 import android.os.StrictMode
 import android.text.Editable
@@ -28,7 +29,7 @@ import com.schnell.http.ResponseListener
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
-class MainActivity : AppCompatActivity(), ResponseListener, AreaCodeDialog.CallBack {
+class MainActivity : Activity(), ResponseListener, AreaCodeDialog.CallBack {
 
     private var Maintext: EditText? = null
     private var Globaltest: TextView? = null
