@@ -28,7 +28,6 @@ import com.schnell.http.ResponseListener
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
-
 class MainActivity : AppCompatActivity(), ResponseListener, AreaCodeDialog.CallBack {
 
     private var Maintext: EditText? = null
@@ -194,7 +193,7 @@ class MainActivity : AppCompatActivity(), ResponseListener, AreaCodeDialog.CallB
 
             AppDialogs.showProgressDialog(this, "Please wait..")
 
-            for (i in 0 until 50) {
+            for (i in 0 until 20) {
 //                ThingsManager.getDeviceAssets(this, this)
                 val presentValStr = Globaltest!!.text.toString()
                 var presentIntVal = Integer.parseInt(presentValStr)
